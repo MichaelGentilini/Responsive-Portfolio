@@ -1,0 +1,64 @@
+/* Portfolio Section */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  grid-template-rows: repeat(3, 28%);
+  grid-gap: 1em;
+}
+
+.square {
+  display: grid;
+
+  background-color: #4aaaa5;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  grid-auto-rows: 45px;
+  color: white;
+  font-size: 20px;
+  margin-top: 148px;
+}
+
+.square:hover {
+  font-size: 22px;
+
+  text-shadow: 2px;
+}
+
+.portfolio-item {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  background-image: url(https://cdn.gracza.pl/galeria/gry13/grupy/1394.jpg);
+  height: 200px;
+  width: 270px;
+  grid-gap: 1em;
+}
+
+.box1 {
+  background-image: url(//i.mmo.cm/is/image/mmoimg/thumbnew/life-size-skeleton-hanging-decoration--mw-107647-1.jpg);
+}
+
+.box2 {
+  background-image: url(//i.pinimg.com/236x/a0/7a/68/a07a680f23b0fa1b8e6b632f3d35fe3d--resident-evil-games.jpg);
+}
+
+.box3 {
+  background-image: url(//www.gamblinginsider.ca/gica/images/icons/CS467_largeicons_Bingo_LGE.jpg);
+}
+
+.box4 {
+  background-image: url(../images/Safety.JPG);
+
+}
+
+.box5 {
+  background-image: url(//www.womex.com/virtual/image/logo/big/rock_paper_scissors_big_24.png);
+  position: relative;
+  transition: all ease-in-out 300ms;
+}
+
+.portfolio-item:hover {
+  background-position: center;
+  background-size: 125%;
+}
