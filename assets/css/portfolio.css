@@ -2,14 +2,13 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 30%);
+  grid-template-columns: repeat(2, 35%);
   grid-template-rows: repeat(3, 28%);
   grid-gap: 1em;
 }
 
 .square {
   display: grid;
-
   background-color: #4aaaa5;
   text-align: center;
   vertical-align: middle;
@@ -29,36 +28,86 @@
 .portfolio-item {
   margin-top: 1em;
   margin-bottom: 2em;
-  background-image: url(https://cdn.gracza.pl/galeria/gry13/grupy/1394.jpg);
+  background-image: url(https://assets3.thrillist.com/v1/image/2755349/size/gn-gift_guide_variable_c_2x.jpg);
   height: 200px;
   width: 270px;
-  grid-gap: 1em;
+  grid-gap: 0em;
 }
 
 .box1 {
-  background-image: url(//i.mmo.cm/is/image/mmoimg/thumbnew/life-size-skeleton-hanging-decoration--mw-107647-1.jpg);
+  background-image: url(https://www.pcgamesn.com/wp-content/uploads/2018/10/Free-PC-games-Skyforge-900x507.jpg);
 }
 
 .box2 {
-  background-image: url(//i.pinimg.com/236x/a0/7a/68/a07a680f23b0fa1b8e6b632f3d35fe3d--resident-evil-games.jpg);
+  background-image: url(https://www.pcgamesn.com/wp-content/uploads/2018/10/Free-PC-games-Guild-Wars-2-900x507.jpg);
 }
 
 .box3 {
-  background-image: url(//www.gamblinginsider.ca/gica/images/icons/CS467_largeicons_Bingo_LGE.jpg);
+  background-image: url(https://www.pcgamesn.com/wp-content/uploads/2018/10/Free-PC-games-Blade-and-Soul-900x507.jpg);
 }
 
 .box4 {
-  background-image: url(../images/Safety.JPG);
+  background-image: url(https://www.pcgamesn.com/wp-content/uploads/2018/09/heavy-metal-machines-free-pc-games-900x507.jpg);
 
 }
 
 .box5 {
-  background-image: url(//www.womex.com/virtual/image/logo/big/rock_paper_scissors_big_24.png);
-  position: relative;
-  transition: all ease-in-out 300ms;
+  background-image: url(https://www.pcgamesn.com/wp-content/uploads/2018/10/Free-PC-games-Crossout-900x507.jpg);
 }
 
 .portfolio-item:hover {
   background-position: center;
   background-size: 125%;
+}
+
+/* //// Media Queries //// */
+
+
+/* Large devices (laptops/desktops, 980px and up) */
+
+@media screen and (max-width: 980px) {}
+
+.wrapper {
+  grid-template-columns: repeat(2, 30%);
+  grid-template-rows: repeat(3, 10%);
+  grid-gap: 8em;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows: repeat(3, 10%);
+    grid-gap: 8em;
+  }
+
+  .portfolio-item {
+    height: 220px;
+    width: 300px;
+  }
+
+  .square {
+    margin-top: 160px;
+  }
+}
+
+
+/* Small devices (phones, 640px and down) */
+@media screen and (max-width: 640px) {
+
+  .wrapper {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 10%);
+  }
+
+  .portfolio-item {
+    height: 300px;
+    width: 480px;
+  }
+
+  .square {
+    margin-top: 240px;
+  }
+
 }

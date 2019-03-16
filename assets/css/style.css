@@ -161,7 +161,9 @@ h6 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
+h3 {
+  text-align: center;
+}
 
 /* //// Media Queries //// */
 
@@ -195,43 +197,44 @@ h6 {
     /* background-color: purple; */
   }
 
-  .container {
-    width: 700px;
+  section {
+    width: 660px;
   }
 
-  .content {
-    width: 700px;
-    position: static;
-    left: 0;
+  .container {
+    width: 660px;
   }
 }
 
 
 /* Small devices (phones, 640px and down) */
 @media screen and (max-width: 640px) {
+
   header {
     position: static;
-    width: 640px;
-
-
+    width: 700px;
   }
 
   .container {
-    width: 600px;
+    width: 640px;
     margin: 0;
   }
 
   section {
-    width: 500px;
+    width: 510px;
   }
 
   .namebox {
-
-    width: 680px;
+    width: 600px;
+    margin: auto;
+    padding-right: 100px;
   }
 
   nav {
+    width: 600px;
+    margin: auto;
     padding-top: 15px;
     text-align: center;
+
   }
 }
